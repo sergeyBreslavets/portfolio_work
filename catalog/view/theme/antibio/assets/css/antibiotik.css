@@ -1,0 +1,30 @@
+.post-item.style2 .post-title {
+    min-height: 80px;
+}
+.post-item.style2 .post-title a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+/*для календаря*/
+.ui-datepicker{
+	width: 100%;
+}
+.ui-datepicker td a{
+	text-align: center;
+}
+
+
+/*для карусели*/
+.carousel-1 .carousel-control.right {
+    right: 0px !important;
+}
+.carousel-1 .carousel-control.left {
+    left: 0px !important;
+}
+
+.post-item.style2.item-calendar .post-title{
+    min-height: 0px;
+}

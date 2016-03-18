@@ -1,0 +1,180 @@
+.wizard-text .module-step {
+  opacity: 0;
+  display: none;
+  border: 2px solid #1a1a1a;
+  text-align: center;
+ 
+  position: relative;
+}
+.wizard-text .module-step.current {
+  opacity: 1;
+}
+.wizard-text .module-step .module-question {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .wizard-text .module-step .module-question {
+    padding: 20px;
+  }
+}
+.wizard-text .module-step .module-question h4 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .wizard-text .module-step .module-question h4 {
+    font-size: 20px;
+  }
+}
+.wizard-text .module-step .module-answer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+.wizard-text .module-step .module-answer .btn-block{
+  white-space: normal!important;
+ 
+}
+
+.wizard-text .module-step .module-answer .btn-border-blue {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .wizard-text .module-step .module-answer .btn-border-blue {
+    margin-bottom: 0px;
+  }
+}
+.wizard-text .module-step .module-comment {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+}
+.wizard-text .module-step .module-comment .module-comment__block {
+  height: 100%;
+  width: 100%;
+  border: 2px dashed #08bcff;
+  position: relative;
+}
+.wizard-text .module-step .module-comment .module-comment__block .module-comment__btn {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+}
+.wizard-text .module-step .module-comment .module-comment__block .module-comment__text {
+  margin: 55px;
+}
+.wizard-text .module-step .module-comment .module-comment__block .module-comment__text p {
+  font-size: 30px;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .wizard-text .module-step .module-comment .module-comment__block .module-comment__text p {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+.wizard-image .module-step {
+  opacity: 0;
+  display: none;
+  text-align: center;
+  position: relative;
+}
+.wizard-image .module-step.current {
+  opacity: 1;
+}
+.wizard-image .module-step .module-question {
+  position: relative;
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .wizard-image .module-step .module-question {
+    padding: 5px;
+  }
+}
+.wizard-image .module-step .module-question .module-question__title {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .wizard-image .module-step .module-question .module-question__title {
+    font-size: 18px;
+  }
+}
+.wizard-image .module-step .module-answer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wizard-image .module-step .module-answer .btn-img {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5px;
+}
+.wizard-image .module-step .module-answer .btn-img img {
+  border: 2px solid 0%;
+  width: 320px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .wizard-image .module-step .module-answer .btn-img img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+}
+.wizard-image .module-step .module-answer .btn-img .answer-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: block;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0 0 -40px;
+}
+.wizard-image .module-step .module-answer .btn-img .answer-icon i {
+  font-size: 80px;
+  line-height: 80px;
+}
+.wizard-image .module-step .module-answer .btn-img .answer-icon.correct {
+  color: #00a651;
+}
+.wizard-image .module-step .module-answer .btn-img .answer-icon.no-correct {
+  color: #ee342e;
+}
+.wizard-image .module-step .module-answer .btn-img:hover img {
+  border-color: #08bcff;
+}
+.wizard-image .module-step .module-answer .btn-img.my_answer img {
+  border-color: #08bcff;
+}
+.wizard-image .module-step .module-comment {
+  position: relative;
+  display: none;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 5px;
+}
+.wizard-image .module-step .module-comment .module-comment__block {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.wizard-image .module-step .module-comment .module-comment__block .module-comment__btn {
+  position: relative;
+  width: 100%;
+}
+.pagination li.no-correct a {
+  background-color: #ee342e;
+  color: #FFFFFF;
+}
+.pagination li.correct a {
+  background-color: green;
+  color: #FFFFFF;
+}

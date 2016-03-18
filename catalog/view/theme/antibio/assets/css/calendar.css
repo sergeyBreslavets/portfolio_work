@@ -1,0 +1,50 @@
+//для большого календаря
+
+.ui-datepicker{
+	width: 100%;
+}
+.ui-datepicker td a{
+	text-align: center;
+}
+.ui-datepicker-calendar .calendarTdNotActive a {
+    color: #6c6c6c !important;
+    font-weight: normal;
+}
+.ui-datepicker-calendar .ui-datepicker-current-day a{
+    color: rgb(21, 124, 193) !important;
+    font-weight: bold;
+}
+.ui-datepicker-calendar .calendarTdNotActive.ui-datepicker-current-day a{
+    color: #6c6c6c !important;
+}
+.ui-datepicker-calendar a{
+    color: rgba(52, 152, 219, 0.8) !important;
+    font-weight: bold;
+}
+
+#calendarListData .post-tags {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+}
+
+#dpInlineBig .ui-datepicker td {
+    font-size: 21px;
+    font-weight: 300;
+}
+#dpInlineBig .ui-datepicker-header {
+    font-size: 21px;
+}
+
+#dpInlineBig .ui-datepicker-calendar {
+    line-height: 35px;
+    font-size: 18px;
+}
+
+#dpInlineBig .ui-datepicker-calendar a{
+    width: 40px;
+}
+#dpInlineBig .ui-datepicker-calendar span{
+    width: 40px;
+    text-align: center;
+}
