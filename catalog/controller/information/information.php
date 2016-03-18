@@ -39,8 +39,12 @@ class ControllerInformationInformation extends Controller {
 			$data['button_continue'] = $this->language->get('button_continue');
 
 			$data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
+             
+            $data['sub_description'] = $information_info['sub_description'];
 
 			$data['continue'] = $this->url->link('common/home');
+
+			$data['image'] = $information_info['image'];
 			
 			//прикрепленные файлы
 			//!!!!!!!!!!!  переписать

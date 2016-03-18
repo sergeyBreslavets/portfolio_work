@@ -93,6 +93,13 @@
                     <li><a href="#portfolio">Портфолио </a> </li>
 
                     <li><a href="#contact">Контакты </a>    </li>
+                     <?php if ($logged) { ?>
+                      <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+                      <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+                      <?php } else { ?>
+                      <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+                      <li><a  href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+                      <?php } ?>
                 </ul>
             </div>
     

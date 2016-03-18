@@ -1,143 +1,79 @@
 <?php echo $header; ?>
-<!-- Optional header components (ex: slider) -->
-    <div class="pg-opt hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <h2>Blog</h2>
-                </div>
-                <div class="col-xs-6">
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li class="active">Large grid</li>
-                    </ol>
-                </div>
-            </div>
+<?php echo $content_top; ?>
+<!-- Home start -->
+  <section class="home-section home-parallax home-fade home-full-height bg-dark-60" data-background="image/<?php echo $image; ?>">
+
+    <div class="hs-caption">
+      <div class="caption-content">
+        <div class="font-alt mb-30">
+         
         </div>
-    </div> 
-  <?php echo $content_top; ?>
-  <!-- MAIN CONTENT -->
- <div class=" e-block-centered e-block-skin hp-services" data-stellar-background-ratio="0.5">
-             <div class="container">
-                <div class="row">
-
-                <!-- CONTENT -->
-            <?php if ($column_left) { ?>
-                         <div class="col-xs-12 col-sm-3 col-md-3">
-                            <?php echo $column_left; ?>
-                            </div>
-           <?php } ?>
-
-                <?php if ($column_left && $column_right) { ?>
-                <?php $class = 'col-sm-5'; ?>
-                <?php } elseif ($column_left || $column_right) { ?>
-                <?php $class = 'col-sm-8'; ?>
-                <?php } else { ?>
-                <?php $class = 'col-sm-12'; ?>
-                <?php } ?>
-                <div class="<?php echo $class; ?>">
-                  <div class="post-item  infoblock">
-                       
-              
-                              
-  <h2 class="font-accident-one-bold uppercase wow fadeIn"><?php echo $heading_title; ?></h2>
-
-                      <hr class="mt-29">
-
-                          <div class="post-content">  
-                        
-
-                              <span class="post-author hidden">WRITTEN BY <a href="#" hidefocus="true" style="outline: none;">James Franco</a></span>
-                              <div class="post-tags hidden">Posted in <a href="#" hidefocus="true" style="outline: none;">HOTELS</a>, <a href="#" hidefocus="true" style="outline: none;">SPECIAL PROMOS</a>, <a href="#" hidefocus="true" style="outline: none;">SUMMER</a></div>
-                              <div class="clearfix hidden"></div>
-                              <div class="post-desc text_post">
-
-                               <?php echo $description; ?>
-                              </div>
-                          </div>
-
-                       <div class="dividewhite2"></div>
-                   <!--- foreach information_to_downloads-->
-                      <?php if(!empty($information_to_downloads)){ ?>
-
-                                   <!-- Logos Block  -->
-        <div class="logos e-block  e-bg-light e-bg-light-texture" data-stellar-background-ratio="0.5">
-            <!-- Decorative arrow -->
-            <div class="down-arrow wow fadeIn">&nbsp;</div>
-            <!-- /Decorative arrow -->
-            <div class="dividewhite2"></div>
-            
-           
-
-
-   <div class="row">
-      <?php foreach ($information_to_downloads as $itd) { ?>
-    <div class=" infoblock logos-item wow fadeIn">
-        
-
-           <div class="col-xs-8"> 
-           <h4 class="font-accident-one-medium"><?php echo $itd['name']; ?> </h4>
-                                
-            </div>
-           <div class="col-xs-4">
-          <!--     <a class="btn btn-b-white btn-lg pull-right " target="_blank" title="" href="<?php echo $itd['href']; ?>">Прочитать <?php echo $itd['size']; ?></a> -->
-              <a role="button" href="<?php echo $itd['href']; ?>" target="_blank" class=" btn btn-lg btn-gr">Прочитать  <?php echo $itd['size']; ?></a>
-
+        <div class="hs-title-size-3 font-alt mb-30">
+          <?php echo $heading_title; ?>
         </div>
-       
-
-      <?php } ?>
-                          
-</div>
-
-
-
-            </div>
- </div>
-        <?php }?>  
-        <!-- /Logos Block -->
-
-
-
-                         
-                          <!--- foreach information_to_downloads-->
-                          <?php if($quiz_id){ ?>
-                            <div class="wp-example" id="box-elements">
-                                <div class="box-element base">
-                                  <div class="row">
-                                    <div class="col-md-8">
-                                        <h4>Пройти тест: <?php echo $quiz_title; ?></h4>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a class="btn btn-b-white btn-lg pull-right" title="" href="<?php echo $quiz_href; ?>">Пройти тест</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          <?php }?>
-
-                          
-                          <?php echo $content_bottom; ?>
-                         
-
-                   
-                       
-                      
-                      </div>
-
-                  
-                  
-                </div>
-
-            
-                         <?php if ($column_right) { ?>
-                            <div class="col-xs-12 col-sm-3 col-md-3">
-                                <?php echo $column_right; ?>
-                            </div>
-                         <?php } ?>
-              </div>
-          </div>
+        <div class="font-serif "> 
+          <p><?php echo $sub_description; ?></p>
+        </div>
       </div>
-</div> 
+    </div>
+
+  </section >
+  <!-- Home end -->
+
+  <!-- Wrapper start -->
+  <div class="main">
+
+    <!-- Portfolio single start -->
+    <section class="module">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+             <h4 class="font-alt mb-0"> <?php echo $heading_title; ?></h4>
+             <hr class="divider-w mt-10 mb-20">
+            <?php echo $description; ?>
+  
+          </div><!-- .row -->
+            
+      </div>
+      </div>
+      </section>
+ <?php if(!empty($information_to_downloads)){ ?>
+<section class="module-small bg-dark">
+      <div class="container">
+ <?php foreach ($information_to_downloads as $itd) { ?>  
+        <div class="row">
+       
+          <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+
+            <div class="callout-text font-alt">
+              <h3 class="callout-title"><?php echo $itd['name']; ?></h3>
+            
+            </div>
+
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4">
+
+            <div class="callout-btn-box">
+<a role="button" href="<?php echo $itd['href']; ?>" target="_blank" class="btn btn-g btn-round">Скачать  <?php echo $itd['size']; ?></a>
+
+
+            </div>
+
+          </div>
+
+        </div><!-- .row -->
+ <?php } ?>
+
+      </div>
+    </section>
+<?php }?>  
+
+
+
+<?php echo $content_bottom; ?>
+                         
+
 <?php echo $footer; ?>

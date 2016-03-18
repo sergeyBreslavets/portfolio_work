@@ -29,6 +29,9 @@
     <script src=catalog/view/theme/portfolio/assets/js/owl.carousel.min.js></script>
     <script src=catalog/view/theme/portfolio/assets/js/contact.js></script>
     <script src=catalog/view/theme/portfolio/assets/js/custom.js></script>
+    <?php foreach ($scripts as $script) { ?>
+  <script src="<?php echo $script; ?>" type="text/javascript"></script>
+<?php } ?>
 </body>
 
 </html>
